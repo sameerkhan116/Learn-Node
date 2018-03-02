@@ -14,8 +14,8 @@ const transport = nodemailer.createTransport({
 });
 
 exports.send = async (options) => {
-  const html = generateHTML(options.filename, options);
-  const text = htmlToText.fromString(html);
+const html = generateHTML(options.filename, options);
+  const text = htmltoText.fromString(html);
   const mailOptions = {
     from: 'Sameer Khan <sameerkhan7494@gmail.com',
     to: options.user.email,
